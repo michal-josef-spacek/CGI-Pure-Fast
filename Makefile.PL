@@ -8,6 +8,7 @@ use ExtUtils::MakeMaker;
 # Definition.
 WriteMakefile(
 	'AUTHOR' => 'Michal Špaček <skim@cpan.org>',
+	'LICENSE' => 'bsd',
 	'NAME' => 'CGI::Pure::Fast',
 	'PREREQ_PM' => {
 		'CGI::Pure' => 0,
