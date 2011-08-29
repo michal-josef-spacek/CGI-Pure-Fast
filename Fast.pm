@@ -66,7 +66,7 @@ __END__
 
 =head1 NAME
 
-CGI::Pure::Fast - Fast Common Gateway Interface Class.
+CGI::Pure::Fast - Fast Common Gateway Interface Class for CGI::Pure.
 
 =head1 SYNOPSIS
 
