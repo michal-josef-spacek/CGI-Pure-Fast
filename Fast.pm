@@ -96,15 +96,15 @@ CGI::Pure::Fast - Fast Common Gateway Interface Class for CGI::Pure.
 
 =head1 DEPENDENCIES
 
-L<CGI::Pure(3pm)>,
-L<FCGI(3pm)>,
-L<Readonly(3pm)>.
+L<CGI::Pure>,
+L<FCGI>,
+L<Readonly>.
 
 =head1 SEE ALSO
 
-L<CGI::Pure(3pm)>,
-L<CGI::Pure::ModPerl2(3pm)>,
-L<CGI::Pure::Save(3pm)>.
+L<CGI::Pure>,
+L<CGI::Pure::ModPerl2>,
+L<CGI::Pure::Save>.
 
 =head1 AUTHOR
 
