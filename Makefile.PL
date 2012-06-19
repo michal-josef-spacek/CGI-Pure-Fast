@@ -13,11 +13,10 @@ name 'CGI-Pure-Fast';
 requires 'CGI::Pure' => 0.01;
 requires 'FCGI' => 0;
 requires 'Readonly' => 0;
-resources 'repository' => {
-	'url' => 'git://github.com/tupinek/CGI-Pure-Fast',
-	'web' => 'https://github.com/tupinek/CGI-Pure-Fast',
-	'type' => 'git',
-};
+resources 'bugtracker' => 'https://rt.cpan.org/Public/Dist/Display.html'.
+	'?Name=CGI-Pure-Fast';
+resources 'homepage' => 'https://github.com/tupinek/CGI-Pure-Fast';
+resources 'repository' => 'git://github.com/tupinek/CGI-Pure-Fast';
 test_requires 'English' => 0;
 test_requires 'File::Object' => 0.01;
 test_requires 'Test::More' => 0;
