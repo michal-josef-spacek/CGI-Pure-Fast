@@ -10,6 +10,7 @@ abstract 'Fast Common Gateway Interface Class for CGI::Pure.';
 author 'Michal Spacek <skim@cpan.org>';
 license 'bsd';
 name 'CGI-Pure-Fast';
+readme_from 'Fast.pm';
 requires 'CGI::Pure' => 0.01;
 requires 'FCGI' => 0;
 requires 'Readonly' => 0;

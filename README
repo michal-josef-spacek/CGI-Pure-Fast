@@ -1,0 +1,39 @@
+NAME
+    CGI::Pure::Fast - Fast Common Gateway Interface Class for CGI::Pure.
+
+SYNOPSIS
+     use CGI::Pure::Fast;
+     my $cgi = CGI::Pure::Fast->new(%parameters);
+     $cgi->append_param('par', 'value');
+     my @par_value = $cgi->param('par');
+     $cgi->delete_param('par');
+     $cgi->delete_all_params;
+     my $query_string = $cgi->query_string;
+     $cgi->upload('filename', '~/filename');
+     my $mime = $cgi->upload_info('filename', 'mime');
+     my $query_data = $cgi->query_data;
+
+METHODS
+    new(%parameters)
+             Constructor.
+             Extends CGI::Pure for FCGI.
+
+     Other methods are same as CGI::Pure.
+
+DEPENDENCIES
+    CGI::Pure, FCGI, Readonly.
+
+SEE ALSO
+    CGI::Pure, CGI::Pure::ModPerl2, CGI::Pure::Save.
+
+AUTHOR
+    Michal Špaček <mailto:skim@cpan.org>
+
+    <http://skim.cz>
+
+LICENSE AND COPYRIGHT
+    BSD license.
+
+VERSION
+    0.02
+
