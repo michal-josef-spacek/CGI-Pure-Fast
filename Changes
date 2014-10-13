@@ -1,5 +1,6 @@
 0.02
  - Rename CHANGES to Changes.
+ - Update Module::Install to 1.12 version.
 
 0.01 (February 26, 2013)
  - First version.
