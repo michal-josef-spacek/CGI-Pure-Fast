@@ -7,7 +7,7 @@ use inc::Module::Install;
 
 # Definition.
 abstract 'Fast Common Gateway Interface Class for CGI::Pure.';
-author 'Michal Špaček <skim@cpan.org>';
+author 'Michal Spacek <skim@cpan.org>';
 license 'bsd';
 name 'CGI-Pure-Fast';
 requires 'CGI::Pure' => 0.01;
