@@ -1,5 +1,6 @@
 0.02
  - Add LICENSE file.
+ - Add minimal version of Perl.
  - Fix MANIFEST file.
  - Rename CHANGES to Changes.
  - Update Module::Install to 1.12 version.

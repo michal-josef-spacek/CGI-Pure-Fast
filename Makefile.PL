@@ -13,6 +13,7 @@ name 'CGI-Pure-Fast';
 requires 'CGI::Pure' => 0.01;
 requires 'FCGI' => 0;
 requires 'Readonly' => 0;
+requires 'perl' => '5.6.0';
 resources 'bugtracker' => 'https://rt.cpan.org/Public/Dist/Display.html'.
 	'?Name=CGI-Pure-Fast';
 resources 'homepage' => 'https://github.com/tupinek/CGI-Pure-Fast';
