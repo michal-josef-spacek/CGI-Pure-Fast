@@ -4,7 +4,8 @@ TODO
    vraci undef. Projit man FCGI a doresit.
 2. Dokumentace pro CGI::Pure::Fast.
 3. Priklady.
-4.
+4. Nejak resit konstruktor, je potreba aby se to chovalo stejne jako CGI::Pure.
+5.
 
 Applied
 =======
