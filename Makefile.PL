@@ -12,7 +12,7 @@ license 'bsd';
 name 'CGI-Pure-Fast';
 readme_from 'Fast.pm';
 requires 'CGI::Pure' => 0.01;
-requires 'FCGI' => 0;
+requires 'FCGI' => 0.77;
 requires 'Readonly' => 0;
 requires 'perl' => '5.6.0';
 resources 'bugtracker' => 'https://rt.cpan.org/Public/Dist/Display.html'.

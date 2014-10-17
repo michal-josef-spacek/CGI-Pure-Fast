@@ -47,7 +47,8 @@ sub new {
 				return;
 			}
 		} else {
-			if (FCGI::accept < 0) {
+			my $req = FCGI::Request;
+			if ($req->Accept < 0) {
 				return;
 			}
 		}
