@@ -2,6 +2,7 @@
  - Fix functionality with Apache2 mod_fcgid.
  - Rewrite B<> to C<> in doc.
  - Simplify code.
+ - Update Module::Install to 1.14 version.
 
 0.04 2014-10-17T07:33:26+02:00
  - Rewrite to new FCGI API.
