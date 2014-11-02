@@ -1,4 +1,4 @@
-0.05
+0.05 2014-11-02T12:31:33+01:00
  - Add EXAMPLE section to doc.
  - Fix functionality with Apache2 mod_fcgid.
  - Remove 'init' parameter check.
