@@ -1,4 +1,5 @@
 0.05
+ - Add EXAMPLE section to doc.
  - Fix functionality with Apache2 mod_fcgid.
  - Rewrite B<> to C<> in doc.
  - Simplify code.
