@@ -19,7 +19,6 @@ our $VERSION = 0.05;
 our $EXT_REQUEST;
 
 # Workaround for known bug in libfcgi.
-# XXX Remove?
 while (each %ENV) { }
 
 # If ENV{'FCGI_SOCKET_PATH'} is specified, we maintain a FCGI Request handle
