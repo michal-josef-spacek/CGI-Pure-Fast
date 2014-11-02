@@ -21,35 +21,24 @@ our $EXT_REQUEST;
 # Workaround for known bug in libfcgi.
 while (each %ENV) { }
 
-# If ENV{'FCGI_SOCKET_PATH'} is specified, we maintain a FCGI Request handle
-# in this package variable.
-BEGIN {
-
-	# If ENV{FCGI_SOCKET_PATH} is given, explicitly open the socket,
-	# and keep the request handle around from which to call Accept().
-	if ($ENV{'FCGI_SOCKET_PATH'}) {
-		my $path = $ENV{'FCGI_SOCKET_PATH'};
-		my $backlog = $ENV{'FCGI_LISTEN_QUEUE'}
-			|| $FCGI_LISTEN_QUEUE_DEFAULT;
-		my $socket  = FCGI::OpenSocket($path, $backlog);
-		$EXT_REQUEST = FCGI::Request(\*STDIN, \*STDOUT, \*STDERR,
-			\%ENV, $socket, 1);
-	}
-}
-
-# New is slightly different in that it calls FCGI's accept() method.
+# Constructor.
 sub new {
 	my ($class, %params) = @_;
 	if (! exists $params{'init'}) {
-		if ($EXT_REQUEST) {
-			if ($EXT_REQUEST->Accept < 0) {
-				return;
+		if (! defined $EXT_REQUEST) {
+			if ($ENV{'FCGI_SOCKET_PATH'}) {
+				my $path = $ENV{'FCGI_SOCKET_PATH'};
+				my $backlog = $ENV{'FCGI_LISTEN_QUEUE'}
+					|| $FCGI_LISTEN_QUEUE_DEFAULT;
+				my $socket  = FCGI::OpenSocket($path, $backlog);
+				$EXT_REQUEST = FCGI::Request(\*STDIN, \*STDOUT,
+					\*STDERR, \%ENV, $socket, 1);
+			} else {
+				$EXT_REQUEST = FCGI::Request;
 			}
-		} else {
-			our $req = FCGI::Request;
-			if ($req->Accept < 0) {
-				return;
-			}
+		}
+		if ($EXT_REQUEST->Accept < 0) {
+			return;
 		}
 	}
 	my $self = $class->SUPER::new(%params);
