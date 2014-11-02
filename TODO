@@ -5,7 +5,9 @@ TODO
 2. Dokumentace pro CGI::Pure::Fast.
 3. Priklady.
 4. Nejak resit konstruktor, je potreba aby se to chovalo stejne jako CGI::Pure.
-5.
+5. Pridat uzivatelske fh - https://github.com/leejo/cgi-fast/issues/4
+   Pokud to ma smysl.
+6.
 
 Applied
 =======
