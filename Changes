@@ -1,6 +1,7 @@
 0.05
  - Add EXAMPLE section to doc.
  - Fix functionality with Apache2 mod_fcgid.
+ - Remove 'init' parameter check.
  - Rewrite B<> to C<> in doc.
  - Simplify code.
  - Update Module::Install to 1.14 version.

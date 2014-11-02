@@ -23,23 +23,21 @@ while (each %ENV) { }
 
 # Constructor.
 sub new {
-	my ($class, %params) = @_;
-	if (! exists $params{'init'}) {
-		if (! defined $EXT_REQUEST) {
-			if ($ENV{'FCGI_SOCKET_PATH'}) {
-				my $path = $ENV{'FCGI_SOCKET_PATH'};
-				my $backlog = $ENV{'FCGI_LISTEN_QUEUE'}
-					|| $FCGI_LISTEN_QUEUE_DEFAULT;
-				my $socket  = FCGI::OpenSocket($path, $backlog);
-				$EXT_REQUEST = FCGI::Request(\*STDIN, \*STDOUT,
-					\*STDERR, \%ENV, $socket, 1);
-			} else {
-				$EXT_REQUEST = FCGI::Request;
-			}
+	my ($class, @params) = @_;
+	if (! defined $EXT_REQUEST) {
+		if ($ENV{'FCGI_SOCKET_PATH'}) {
+			my $path = $ENV{'FCGI_SOCKET_PATH'};
+			my $backlog = $ENV{'FCGI_LISTEN_QUEUE'}
+				|| $FCGI_LISTEN_QUEUE_DEFAULT;
+			my $socket  = FCGI::OpenSocket($path, $backlog);
+			$EXT_REQUEST = FCGI::Request(\*STDIN, \*STDOUT,
+				\*STDERR, \%ENV, $socket, 1);
+		} else {
+			$EXT_REQUEST = FCGI::Request;
 		}
-		if ($EXT_REQUEST->Accept < 0) {
-			return;
-		}
+	}
+	if ($EXT_REQUEST->Accept < 0) {
+		return;
 	}
 	return $class->SUPER::new(@params);
 }
