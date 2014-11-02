@@ -41,8 +41,7 @@ sub new {
 			return;
 		}
 	}
-	my $self = $class->SUPER::new(%params);
-	return $self;
+	return $class->SUPER::new(@params);
 }
 
 1;
