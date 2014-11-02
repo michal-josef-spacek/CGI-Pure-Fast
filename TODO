@@ -9,7 +9,8 @@ pred tim, tak segfault :-)
 4. Nejak resit konstruktor, je potreba aby se to chovalo stejne jako CGI::Pure.
 5. Pridat uzivatelske fh - https://github.com/leejo/cgi-fast/issues/4
    Pokud to ma smysl.
-6.
+6. Resit nejak situaci s 'init' a timto?
+7.
 
 Applied
 =======
