@@ -74,7 +74,7 @@ CGI::Pure::Fast - Fast Common Gateway Interface Class for CGI::Pure.
 
 =over 8
 
-=item B<new(%parameters)>
+=item C<new(%parameters)>
 
  Constructor.
  Extends CGI::Pure for FCGI.

@@ -14,7 +14,7 @@ SYNOPSIS
      my $query_data = $cgi->query_data;
 
 METHODS
-    new(%parameters)
+    "new(%parameters)"
              Constructor.
              Extends CGI::Pure for FCGI.
 

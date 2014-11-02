@@ -1,5 +1,6 @@
 0.05
  - Fix functionality with Apache2 mod_fcgid.
+ - Rewrite B<> to C<> in doc.
  - Simplify code.
 
 0.04 2014-10-17T07:33:26+02:00
