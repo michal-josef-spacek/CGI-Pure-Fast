@@ -129,8 +129,17 @@ L<Readonly>.
 
 =head1 SEE ALSO
 
-L<CGI::Pure>,
-L<CGI::Pure::Save>.
+=over
+
+=item L<CGI::Pure>
+
+Common Gateway Interface Class.
+
+=item L<CGI::Pure::Save>
+
+Common Gateway Interface Class for loading/saving object in file.
+
+=back
 
 =head1 AUTHOR
 

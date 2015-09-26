@@ -64,7 +64,11 @@ DEPENDENCIES
     CGI::Pure, FCGI, Readonly.
 
 SEE ALSO
-    CGI::Pure, CGI::Pure::Save.
+    CGI::Pure
+        Common Gateway Interface Class.
+
+    CGI::Pure::Save
+        Common Gateway Interface Class for loading/saving object in file.
 
 AUTHOR
     Michal Špaček <mailto:skim@cpan.org>
