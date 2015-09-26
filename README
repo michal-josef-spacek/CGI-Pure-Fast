@@ -64,7 +64,7 @@ DEPENDENCIES
     CGI::Pure, FCGI, Readonly.
 
 SEE ALSO
-    CGI::Pure, CGI::Pure::ModPerl2, CGI::Pure::Save.
+    CGI::Pure, CGI::Pure::Save.
 
 AUTHOR
     Michal Špaček <mailto:skim@cpan.org>

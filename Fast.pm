@@ -130,7 +130,6 @@ L<Readonly>.
 =head1 SEE ALSO
 
 L<CGI::Pure>,
-L<CGI::Pure::ModPerl2>,
 L<CGI::Pure::Save>.
 
 =head1 AUTHOR
