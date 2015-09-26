@@ -13,7 +13,7 @@ use Readonly;
 Readonly::Scalar my $FCGI_LISTEN_QUEUE_DEFAULT => 100;
 
 # Version.
-our $VERSION = 0.06;
+our $VERSION = 0.07;
 
 # External request.
 our $EXT_REQUEST;
@@ -154,6 +154,6 @@ L<http://skim.cz>
 
 =head1 VERSION
 
-0.06
+0.07
 
 =cut
