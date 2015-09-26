@@ -2,6 +2,8 @@ Changes
 examples/ex1.pl
 Fast.pm
 inc/Module/Install.pm
+inc/Module/Install/AuthorRequires.pm
+inc/Module/Install/AuthorTests.pm
 inc/Module/Install/Base.pm
 inc/Module/Install/Can.pm
 inc/Module/Install/Fetch.pm
@@ -16,7 +18,7 @@ MANIFEST			This list of files
 META.yml
 README
 SIGNATURE
-t/CGI-Pure-Fast/00-use.t
-t/CGI-Pure-Fast/01-version.t
-t/CGI-Pure-Fast/02-pod_coverage.t
-t/CGI-Pure-Fast/03-pod.t
+t/CGI-Pure-Fast/01-use.t
+t/CGI-Pure-Fast/02-version.t
+xt/CGI-Pure-Fast/01-pod_coverage.t
+xt/CGI-Pure-Fast/02-pod.t
