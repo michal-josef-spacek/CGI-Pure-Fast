@@ -1,4 +1,4 @@
-0.08
+0.08 2018-01-22T11:48:45+01:00
  - Fix Makefile.PL for new version of Perl and no default »use lib '.'«.
 
 0.07 2018-01-22T09:27:07+01:00
