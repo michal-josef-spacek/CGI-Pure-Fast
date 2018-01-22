@@ -1,18 +1,15 @@
 package CGI::Pure::Fast;
 
-# Pragmas.
 use base qw(CGI::Pure);
 use strict;
 use warnings;
 
-# Modules.
 use FCGI;
 use Readonly;
 
 # Constants.
 Readonly::Scalar my $FCGI_LISTEN_QUEUE_DEFAULT => 100;
 
-# Version.
 our $VERSION = 0.07;
 
 # External request.
