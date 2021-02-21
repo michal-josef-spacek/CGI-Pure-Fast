@@ -70,6 +70,9 @@ SEE ALSO
     CGI::Pure::Save
         Common Gateway Interface Class for loading/saving object in file.
 
+REPOSITORY
+    <https://github.com/michal-josef-spacek/CGI-Pure-Fast>
+
 AUTHOR
     Michal Josef Špaček <mailto:skim@cpan.org>
 

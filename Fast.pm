@@ -138,6 +138,10 @@ Common Gateway Interface Class for loading/saving object in file.
 
 =back
 
+=head1 REPOSITORY
+
+L<https://github.com/michal-josef-spacek/CGI-Pure-Fast>
+
 =head1 AUTHOR
 
 Michal Josef Špaček L<mailto:skim@cpan.org>
