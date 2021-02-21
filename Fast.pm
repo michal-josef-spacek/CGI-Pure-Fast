@@ -54,6 +54,7 @@ CGI::Pure::Fast - Fast Common Gateway Interface Class for CGI::Pure.
 =head1 SYNOPSIS
 
  use CGI::Pure::Fast;
+
  my $cgi = CGI::Pure::Fast->new(%parameters);
  $cgi->append_param('par', 'value');
  my @par_value = $cgi->param('par');
