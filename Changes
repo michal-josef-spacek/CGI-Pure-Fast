@@ -5,6 +5,7 @@
  - Improve SYNOPSIS section in doc.
  - Update Module::Install to 1.19 version.
  - Update author github username.
+ - Update copyright years.
 
 0.08 2018-01-22T11:48:45+01:00
  - Fix Makefile.PL for new version of Perl and no default »use lib '.'«.
