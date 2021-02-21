@@ -10,7 +10,7 @@ use Readonly;
 # Constants.
 Readonly::Scalar my $FCGI_LISTEN_QUEUE_DEFAULT => 100;
 
-our $VERSION = 0.09;
+our $VERSION = 0.10;
 
 # External request.
 our $EXT_REQUEST;
@@ -155,6 +155,6 @@ BSD 2-Clause License
 
 =head1 VERSION
 
-0.09
+0.10
 
 =cut
