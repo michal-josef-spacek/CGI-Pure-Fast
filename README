@@ -22,11 +22,9 @@ METHODS
      Other methods are same as CGI::Pure.
 
 EXAMPLE
-     # Pragmas.
      use strict;
      use warnings;
 
-     # Modules.
      use CGI::Pure::Fast;
      use HTTP::Headers;
 

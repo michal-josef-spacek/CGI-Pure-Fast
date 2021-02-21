@@ -80,11 +80,9 @@ CGI::Pure::Fast - Fast Common Gateway Interface Class for CGI::Pure.
 
 =head1 EXAMPLE
 
- # Pragmas.
  use strict;
  use warnings;
 
- # Modules.
  use CGI::Pure::Fast;
  use HTTP::Headers;
 
